@@ -25,7 +25,7 @@ Old versions from here:
 https://www.virtualbox.org/wiki/Download_Old_Builds  
 Install in VirtualBox Preferences:  
 `File->Preferences (Ctrl+G)`  
-![ExtensionPack](../../media/VBX01)
+![ExtensionPack](media/VBX01)
 
 
 #### Add user to vbox group:

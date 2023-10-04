@@ -5,7 +5,7 @@ Vivaldi saved sessions: `/home/goatfarm/.config/vivaldi`
 GIMP Settings `/home/goatfarm/.config/GIMP`
 
 #### Disable ALT move windows  
-![DisableALTMove](../../media/DisableALTMove)
+![DisableALTMove](media/DisableALTMove)
 
 
 
