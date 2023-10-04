@@ -4,14 +4,13 @@ Software
 * GIMP
 * Inkscape
 * MyPaint
-* Drawing
 * Kdenlive
 * Blender
-* QownNotes
 
 ---
 
-* Scribus  
+* Scribus
+* QownNotes  
 
 ---
 
@@ -42,7 +41,7 @@ Software
 
 * Vivaldi
 * Chromium
-* Whatsie
+* Zapzap (Whatsapp client)
 * Whatsapp
 * Telegram
 * Scanner
