@@ -33,6 +33,7 @@ Software
 ---
 
 * Audacity
+* Sweep (audio Editor)
 * MPV
 * VLC
 * VCV
