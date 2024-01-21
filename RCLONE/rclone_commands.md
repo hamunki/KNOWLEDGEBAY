@@ -9,3 +9,5 @@ rclone lsd "one drive:Pictures"
 
 #### clone from specified local dir to remote dir on MS One Drive
 rclone sync /home/source/dir "one drive:dest_dir" -v
+
+rclone sync"one drive:dest_dir" /home/source/dir  -v
