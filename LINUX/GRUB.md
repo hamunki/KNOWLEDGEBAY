@@ -59,3 +59,8 @@ done`
 `Installation finished. No error reported.`
 
 When you run `grub-install` remember you’re installing it to the boot sector of your hard drive and not to a partition, so do not use a partition number like `/dev/sda1`.
+
+#### Sources
+
+* https://superuser.com/questions/1237684/how-to-boot-from-grub-shell
+* https://www.linuxfoundation.org/blog/blog/classic-sysadmin-how-to-rescue-a-non-booting-grub-2-on-linux
