@@ -15,12 +15,12 @@ Type `ls` to list all partitions that GRUB sees:
 `grub> ls`  
 `(hd0) (hd0,msdos2) (hd0,msdos1)`
 
-What’s all this `msdos` stuff? That means this system has the old-style MS-DOS partition table, rather than the shiny new Globally Unique Identifiers partition table (GPT). If you’re running GPT it will say `(hd0,gpt1)`. Now let’s snoop. Use the ls command to see what files are on your system:
+What’s all this `msdos` stuff? That means this system has the old-style MS-DOS partition table, rather than the shiny new Globally Unique Identifiers partition table (GPT). If you’re running GPT it will say `(hd0,gpt1)`. Now let’s snoop. Use the `ls` command to see what files are on your system:
 
 `grub> ls (hd0,1)/`  
 `lost+found/ bin/ boot/ cdrom/ dev/ etc/ home/  lib/ lib64/ media/ mnt/ opt/ proc/ root/ run/ sbin/ srv/ sys/ tmp/ usr/ var/ vmlinuz vmlinuz.old initrd.img initrd.img.old`
 
-Hurrah, we have found the root filesystem. You can omit the msdos and gpt labels. If you leave off the slash it will print information about the partition. You can read any file on the system with the cat command:
+Hurrah, we have found the root filesystem. You can omit the msdos and gpt labels. If you leave off the slash it will print information about the partition. You can read any file on the system with the `cat` command:
 
 `grub> cat (hd0,1)/etc/issue`  
 `Ubuntu 14.04 LTS n l`
@@ -43,17 +43,17 @@ The fourth line boots your system.
 When you have successfully booted your system, run these commands to fix GRUB permanently:
 
 `$ update-grub`  
-`Generating grub configuration file ...
-Found background: /usr/share/images/grub/Apollo_17_The_Last_Moon_Shot_Edit1.tga
-Found background image: /usr/share/images/grub/Apollo_17_The_Last_Moon_Shot_Edit1.tga
-Found linux image: /boot/vmlinuz-3.13.0-29-generic
-Found initrd image: /boot/initrd.img-3.13.0-29-generic
-Found linux image: /boot/vmlinuz-3.13.0-27-generic
-Found initrd image: /boot/initrd.img-3.13.0-27-generic
-Found linux image: /boot/vmlinuz-3.13.0-24-generic
-Found initrd image: /boot/initrd.img-3.13.0-24-generic
-Found memtest86+ image: /boot/memtest86+.elf
-Found memtest86+ image: /boot/memtest86+.bin
+`Generating grub configuration file ...  
+Found background: /usr/share/images/grub/Apollo_17_The_Last_Moon_Shot_Edit1.tga  
+Found background image: /usr/share/images/grub/Apollo_17_The_Last_Moon_Shot_Edit1.tga  
+Found linux image: /boot/vmlinuz-3.13.0-29-generic  
+Found initrd image: /boot/initrd.img-3.13.0-29-generic  
+Found linux image: /boot/vmlinuz-3.13.0-27-generic  
+Found initrd image: /boot/initrd.img-3.13.0-27-generic  
+Found linux image: /boot/vmlinuz-3.13.0-24-generic  
+Found initrd image: /boot/initrd.img-3.13.0-24-generic  
+Found memtest86+ image: /boot/memtest86+.elf  
+Found memtest86+ image: /boot/memtest86+.bin  
 done`
 
 `$ grub-install /dev/sda`  
