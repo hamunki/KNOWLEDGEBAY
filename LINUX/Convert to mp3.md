@@ -38,3 +38,14 @@ Convert to mp3 in Terminal
 * `oggenc -q 3 -o file.ogg file.wav`
 
 ---
+
+#### Edit MP3 EXIF Title tag to match filename (minus extension)
+* Install id3v2: `sudo apt install id3v2`
+* View help: `id3v2 -h`
+* Loop through files and edit:`for SONG in *.mp3 ; do id3v2 -t "${SONG%.*}" "$SONG" ; done`
+* Check edits by viewing tags: `id3v2 -l "${SONG%.*}"`
+* Change Title tag and check in same loop: `for SONG in *.mp3; do id3v2 -t "${SONG%.*}" "$SONG"; echo "$SONG"; id3v2 -l "$SONG"; echo "----"; done`
+
+
+NOTES
+---
