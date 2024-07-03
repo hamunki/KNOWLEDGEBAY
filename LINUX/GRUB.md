@@ -8,7 +8,9 @@ The next few commands work with both `grub>` and `grub rescue>`. The first comma
 
 `grub> set pager=1`
 
-There must be no spaces on either side of the equals sign. Now let’s do a little exploring. Type ls to list all partitions that GRUB sees:
+There must be no spaces on either side of the equals sign.  
+Now let’s do a little exploring.  
+Type `ls` to list all partitions that GRUB sees:
 
 `grub> ls`  
 `(hd0) (hd0,msdos2) (hd0,msdos1)`
